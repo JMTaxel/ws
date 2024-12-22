@@ -11,13 +11,13 @@
             margin: 0;
             font-family: 'Avenir', sans-serif;
             color: white;
-            background: linear-gradient(to bottom right, #1b2540, #000000); /* Even darker background gradient */
+            background: linear-gradient(to bottom right, #101822, #000000); /* Darker overall gradient */
         }
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 80px; /* Aligns with hero text */
+            padding: 20px 80px;
             background-color: transparent;
         }
         .header .logo {
@@ -53,13 +53,14 @@
         }
         .hero {
             text-align: left;
-            padding: 70px 80px; /* Moved closer to the top */
+            padding: 70px 80px;
             max-width: 40%; /* Limit text width to 40% */
         }
         .hero h1 {
             font-size: 4rem;
             font-weight: bold;
             margin-bottom: 20px;
+            font-weight: 900; /* Stronger bold for headline */
         }
         .hero p {
             font-size: 1.25rem;
@@ -75,6 +76,9 @@
             font-weight: bold;
             border-radius: 5px;
             animation: pulseEffect 2s infinite;
+        }
+        .hero a.cta:hover {
+            text-decoration: none;
         }
         @keyframes pulseEffect {
             0% {
@@ -114,9 +118,12 @@
         }
         .footer {
             padding: 40px 80px;
-            background: linear-gradient(to bottom, #1b2540, #000000); /* Seamless blend with background */
+            background: linear-gradient(to bottom, #101822, #000000); /* Seamless background blend */
             color: #b0b0b0;
             text-align: left;
+        }
+        .footer p {
+            margin: 0;
         }
         .footer a {
             color: #00b4d8;
@@ -141,14 +148,13 @@
     <div class="hero">
         <h1>The New Era of Finance</h1>
         <p>Transform your Accounting team with the world’s first AI-powered Bookkeeping Auditor—designed to review, validate, and correct your GL bookings, ensure compliance with GAAP / IFRS, and more.</p>
-        <a href="#" class="cta">Sign up for the Waitlist</a>
+        <a href="mailto:info@taxel.ai?subject=Sign%20Me%20Up%20for%20the%20Waitlist" class="cta">Sign up for the Waitlist</a>
     </div>
     <div class="animation"></div>
 
     <!-- Footer -->
     <div class="footer">
         <p>© 2024 Taxel AI • All rights reserved.</p>
-        <p>Made in <a href="#">Berlin</a> with <a href="#">❤</a></p>
     </div>
 </body>
 </html>
