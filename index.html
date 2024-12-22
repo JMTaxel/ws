@@ -111,18 +111,18 @@
         }
         .document {
             position: absolute;
-            width: 100px;
-            height: 120px;
+            width: 80px;
+            height: 100px;
             background: #212121;
             color: white;
-            font-size: 14px;
+            font-size: 12px;
             font-weight: bold;
             display: flex;
             justify-content: center;
             align-items: center;
             border: 2px solid #00b4d8;
             border-radius: 8px;
-            animation: moveDocuments 6s ease-in-out;
+            animation: moveDocuments 4s ease-in-out;
         }
         .document:nth-child(1) {
             top: 50px;
@@ -132,17 +132,17 @@
         .document:nth-child(2) {
             top: 150px;
             left: -200px;
-            animation-delay: 1s;
+            animation-delay: 0.5s;
         }
         .document:nth-child(3) {
             top: 250px;
             left: -250px;
-            animation-delay: 2s;
+            animation-delay: 1s;
         }
         .document:nth-child(4) {
             top: 100px;
             left: -300px;
-            animation-delay: 1.5s;
+            animation-delay: 0.7s;
         }
 
         @keyframes moveDocuments {
@@ -164,8 +164,8 @@
             width: 150px;
             height: 150px;
             background: #000000;
-            color: #00b4d8;
-            font-size: 18px;
+            color: white;
+            font-size: 20px;
             font-weight: bold;
             border: 2px solid #00b4d8;
             border-radius: 8px;
@@ -175,9 +175,15 @@
             align-items: center;
             text-align: center;
         }
+        .ai-box span {
+            color: #00b4d8;
+        }
 
         .footer {
-            padding: 40px 80px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 20px 80px;
             background: transparent;
             color: #b0b0b0;
             text-align: left;
@@ -210,7 +216,7 @@
             <div class="document">XML</div>
             <div class="document">CSV</div>
             <div class="document">JSON</div>
-            <div class="ai-box">TAXEL AI</div>
+            <div class="ai-box">TAXEL <span>AI</span></div>
         </div>
     </div>
 
