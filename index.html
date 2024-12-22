@@ -51,14 +51,6 @@
             font-weight: bold;
         }
 
-        .header .nav a.contact {
-            background-color: #00b4d8;
-            padding: 10px 20px;
-            border-radius: 5px;
-            color: white;
-            transition: background-color 0.3s ease;
-        }
-
         .main {
             flex: 1;
             display: flex;
@@ -177,14 +169,23 @@
             stroke-width: 1.5;
             fill: none;
             marker-end: url(#arrowhead);
-            animation: arrowPulse 1.5s infinite;
+            stroke-dasharray: 100; /* Total length of arrow */
+            stroke-dashoffset: 100; /* Start hidden */
+            animation: drawArrow 1.5s forwards ease-in-out;
         }
 
-        @keyframes arrowPulse {
-            0% { stroke-opacity: 0.6; }
-            50% { stroke-opacity: 1; }
-            100% { stroke-opacity: 0.6; }
+        @keyframes drawArrow {
+            to {
+                stroke-dashoffset: 0;
+            }
         }
+
+        .arrow:nth-child(1) { animation-delay: 0.1s; }
+        .arrow:nth-child(2) { animation-delay: 0.3s; }
+        .arrow:nth-child(3) { animation-delay: 0.5s; }
+        .arrow:nth-child(4) { animation-delay: 0.7s; }
+        .arrow:nth-child(5) { animation-delay: 0.9s; }
+        .arrow:nth-child(6) { animation-delay: 1.1s; }
 
         .footer {
             padding: 40px 80px;
