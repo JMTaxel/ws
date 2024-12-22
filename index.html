@@ -100,43 +100,95 @@
                 box-shadow: 0 0 5px rgba(0, 180, 216, 0.5);
             }
         }
-        .workflow {
+        .animation-container {
             position: relative;
             width: 50%;
+            height: 400px;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+            overflow: hidden;
         }
-        .workflow .input, .workflow .output {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-            margin-bottom: 20px;
-        }
-        .workflow .node {
-            width: 120px;
-            height: 50px;
+        .document {
+            position: absolute;
+            width: 100px;
+            height: 120px;
             background: #212121;
             color: white;
+            font-size: 14px;
+            font-weight: bold;
             display: flex;
             justify-content: center;
             align-items: center;
             border: 2px solid #00b4d8;
             border-radius: 8px;
-            font-weight: bold;
-            text-align: center;
-            box-shadow: 0 0 15px rgba(0, 180, 216, 0.5);
+            animation: moveDocuments 4s infinite ease-in-out;
         }
-        .workflow .center-node {
+        .document:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+        .document:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+        .document:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+        .document:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+
+        @keyframes moveDocuments {
+            0% {
+                transform: translate(-200px, -50px);
+                opacity: 0;
+            }
+            50% {
+                transform: translate(0, 0);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(200px, 50px);
+                opacity: 0;
+            }
+        }
+
+        .ai-box {
             width: 150px;
-            height: 60px;
+            height: 150px;
             background: #00b4d8;
             color: black;
-            margin: 20px 0;
-            box-shadow: 0 0 20px rgba(0, 180, 216, 1);
+            font-size: 18px;
             font-weight: bold;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 180, 216, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
+
+        .data-line {
+            width: 2px;
+            height: 100px;
+            background: #00b4d8;
+            animation: growLine 4s infinite ease-in-out;
+        }
+
+        @keyframes growLine {
+            0% {
+                height: 0;
+                opacity: 0;
+            }
+            50% {
+                height: 100px;
+                opacity: 1;
+            }
+            100% {
+                height: 0;
+                opacity: 0;
+            }
+        }
+
         .footer {
             padding: 40px 80px;
             background: transparent;
@@ -145,25 +197,6 @@
         }
         .footer p {
             margin: 0;
-        }
-        .line {
-            stroke: #00b4d8;
-            stroke-width: 2;
-            fill: none;
-            animation: draw 2s infinite;
-        }
-        @keyframes draw {
-            from {
-                stroke-dasharray: 0, 1000;
-            }
-            to {
-                stroke-dasharray: 1000, 0;
-            }
-        }
-        svg {
-            position: absolute;
-            width: 100%;
-            height: 100%;
         }
     </style>
 </head>
@@ -185,21 +218,12 @@
             <a href="mailto:info@taxel.ai?subject=Sign%20Me%20Up%20for%20the%20Waitlist" class="cta">Sign up for the Waitlist</a>
         </div>
 
-        <div class="workflow">
-            <div class="input">
-                <div class="node">PDF</div>
-                <div class="node">XML</div>
-                <div class="node">CSV</div>
-                <div class="node">JSON</div>
-            </div>
-
-            <div class="center-node">TAXEL AI</div>
-
-            <div class="output">
-                <div class="node">Invoice Review</div>
-                <div class="node">Approval Management</div>
-                <div class="node">Supplier Communication</div>
-            </div>
+        <div class="animation-container">
+            <div class="document">PDF</div>
+            <div class="document">XML</div>
+            <div class="document">CSV</div>
+            <div class="document">JSON</div>
+            <div class="ai-box">TAXEL AI</div>
         </div>
     </div>
 
