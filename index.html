@@ -127,20 +127,20 @@
             z-index: 2;
         }
 
-        .document:nth-child(1) { top: 5%; left: 10%; }
-        .document:nth-child(2) { top: 20%; left: 10%; }
-        .document:nth-child(3) { top: 35%; left: 10%; }
-        .document:nth-child(4) { top: 50%; left: 10%; }
-        .document:nth-child(5) { top: 65%; left: 10%; }
-        .document:nth-child(6) { top: 80%; left: 10%; }
+        .document:nth-child(1) { top: 5%; left: 20%; }
+        .document:nth-child(2) { top: 20%; left: 20%; }
+        .document:nth-child(3) { top: 35%; left: 20%; }
+        .document:nth-child(4) { top: 50%; left: 20%; }
+        .document:nth-child(5) { top: 65%; left: 20%; }
+        .document:nth-child(6) { top: 80%; left: 20%; }
 
         .workflow {
             position: absolute;
-            width: 150px;
+            width: 120px;
             height: 60px;
             background: linear-gradient(to bottom, #e0f7fa, #00bcd4);
             color: #01579b;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             font-weight: bold;
             display: flex;
             justify-content: center;
@@ -148,12 +148,14 @@
             border-radius: 5px;
             box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
             z-index: 2;
+            text-align: center;
+            line-height: 1.2;
         }
 
-        .workflow:nth-child(1) { top: 10%; right: 5%; }
-        .workflow:nth-child(2) { top: 30%; right: 5%; }
-        .workflow:nth-child(3) { top: 50%; right: 5%; }
-        .workflow:nth-child(4) { top: 70%; right: 5%; }
+        .workflow:nth-child(1) { top: 10%; right: 20%; }
+        .workflow:nth-child(2) { top: 30%; right: 20%; }
+        .workflow:nth-child(3) { top: 50%; right: 20%; }
+        .workflow:nth-child(4) { top: 70%; right: 20%; }
 
         .ai-box {
             position: relative;
@@ -259,10 +261,10 @@
             <div class="ai-box">Taxel <span>AI</span></div>
 
             <!-- Outputs -->
-            <div class="workflow" style="top: 10%; right: 5%;">Approval Management</div>
-            <div class="workflow" style="top: 30%; right: 5%;">Supplier Communication</div>
-            <div class="workflow" style="top: 50%; right: 5%;">Account Assignment</div>
-            <div class="workflow" style="top: 70%; right: 5%;">Tax Finding</div>
+            <div class="workflow" style="top: 10%; right: 20%;">Approval<br>Management</div>
+            <div class="workflow" style="top: 30%; right: 20%;">Supplier<br>Communication</div>
+            <div class="workflow" style="top: 50%; right: 20%;">Account<br>Assignment</div>
+            <div class="workflow" style="top: 70%; right: 20%;">Tax<br>Finding</div>
 
             <!-- Arrows -->
             <svg>
