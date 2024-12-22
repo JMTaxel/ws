@@ -59,10 +59,6 @@
             transition: background-color 0.3s ease;
         }
 
-        .header .nav a.contact:hover {
-            background-color: #0095b6;
-        }
-
         .main {
             flex: 1;
             display: flex;
@@ -178,19 +174,16 @@
 
         .arrow {
             stroke: #00b4d8;
-            stroke-width: 2;
+            stroke-width: 1.5;
             fill: none;
             marker-end: url(#arrowhead);
-            animation: pulseArrow 2s infinite;
+            animation: arrowPulse 1.5s infinite;
         }
 
-        @keyframes pulseArrow {
-            0%, 100% {
-                stroke-width: 2;
-            }
-            50% {
-                stroke-width: 3.5;
-            }
+        @keyframes arrowPulse {
+            0% { stroke-opacity: 0.6; }
+            50% { stroke-opacity: 1; }
+            100% { stroke-opacity: 0.6; }
         }
 
         .footer {
@@ -244,12 +237,12 @@
                         <polygon points="0 0, 10 3.5, 0 7" fill="#00b4d8" />
                     </marker>
                 </defs>
-                <line x1="20%" y1="12%" x2="50%" y2="50%" class="arrow"></line>
-                <line x1="20%" y1="27%" x2="50%" y2="50%" class="arrow"></line>
-                <line x1="20%" y1="42%" x2="50%" y2="50%" class="arrow"></line>
-                <line x1="20%" y1="57%" x2="50%" y2="50%" class="arrow"></line>
-                <line x1="20%" y1="72%" x2="50%" y2="50%" class="arrow"></line>
-                <line x1="20%" y1="87%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="20%" y1="10%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="20%" y1="25%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="20%" y1="40%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="20%" y1="55%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="20%" y1="70%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="20%" y1="85%" x2="50%" y2="50%" class="arrow"></line>
             </svg>
         </div>
     </div>
