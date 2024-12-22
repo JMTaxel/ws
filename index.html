@@ -134,6 +134,11 @@
         .document:nth-child(5) { top: 65%; left: 10%; }
         .document:nth-child(6) { top: 80%; left: 10%; }
 
+        .document-right:nth-child(1) { top: 10%; right: 10%; }
+        .document-right:nth-child(2) { top: 30%; right: 10%; }
+        .document-right:nth-child(3) { top: 50%; right: 10%; }
+        .document-right:nth-child(4) { top: 70%; right: 10%; }
+
         .workflow {
             position: absolute;
             width: 200px;
@@ -190,8 +195,8 @@
             stroke-width: 1.5;
             fill: none;
             marker-end: url(#arrowhead);
-            stroke-dasharray: 100;
-            stroke-dashoffset: 100;
+            stroke-dasharray: 100; /* Total length of arrow */
+            stroke-dashoffset: 100; /* Start hidden */
             animation: drawArrow 6s infinite ease-in-out;
         }
 
@@ -227,8 +232,69 @@
     </style>
 </head>
 <body>
+    <!-- Header -->
     <div class="header">
         <div class="logo">Taxel <span>AI</span></div>
         <div class="nav">
             <a href="#manifesto">Manifesto</a>
-            <a
+            <a href="mailto:info@taxel.ai?subject=Hello%20Taxel%20AI" class="contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>The New Era of <span>Finance</span></h1>
+            <p>Transform your Accounting team with the world’s first AI-powered Bookkeeping Auditor—designed to review, validate, and correct your GL bookings, ensure compliance with GAAP / IFRS, and more.</p>
+            <a href="mailto:info@taxel.ai?subject=Sign%20Me%20Up%20for%20the%20Waitlist" class="cta">Sign up for the Waitlist</a>
+        </div>
+
+        <!-- Animation Section -->
+        <div class="animation-container">
+            <!-- Inputs -->
+            <div class="document">PDF</div>
+            <div class="document">XML</div>
+            <div class="document">CSV</div>
+            <div class="document">TXT</div>
+            <div class="document">JSON</div>
+            <div class="document">XLS</div>
+
+            <!-- TAXEL AI Box -->
+            <div class="ai-box">Taxel <span>AI</span></div>
+
+            <!-- Outputs -->
+            <div class="workflow">Approval Management</div>
+            <div class="workflow">Supplier Communication</div>
+            <div class="workflow">Account Assignment</div>
+            <div class="workflow">Tax Finding</div>
+
+            <!-- Arrows -->
+            <svg>
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                        <polygon points="0 0, 10 3.5, 0 7" fill="#00b4d8" />
+                    </marker>
+                </defs>
+                <!-- Input Arrows -->
+                <line x1="20%" y1="10%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="20%" y1="25%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="20%" y1="40%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="20%" y1="55%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="20%" y1="70%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="20%" y1="85%" x2="50%" y2="50%" class="arrow"></line>
+                <!-- Output Arrows -->
+                <line x1="50%" y1="50%" x2="80%" y2="10%" class="arrow"></line>
+                <line x1="50%" y1="50%" x2="80%" y2="30%" class="arrow"></line>
+                <line x1="50%" y1="50%" x2="80%" y2="50%" class="arrow"></line>
+                <line x1="50%" y1="50%" x2="80%" y2="70%" class="arrow"></line>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2024 Taxel AI • All rights reserved.</p>
+    </div>
+</body>
+</html>
