@@ -14,12 +14,13 @@
             font-family: 'Avenir', sans-serif;
             color: white;
             background: linear-gradient(to bottom right, #0b1120, #000000);
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 80px;
+            padding: 20px 120px; /* Adjusted padding */
             background-color: transparent;
         }
         .header .logo {
@@ -57,11 +58,11 @@
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
-            padding: 70px 120px; /* Increased padding for more space */
+            padding: 70px 120px; /* Adjusted padding */
         }
         .hero-text {
             max-width: 40%;
-            padding-left: 20px; /* Adjust padding inside the hero-text */
+            padding-left: 20px;
         }
         .hero h1 {
             font-size: 4rem;
@@ -101,90 +102,11 @@
                 box-shadow: 0 0 5px rgba(0, 180, 216, 0.5);
             }
         }
-        .animation-container {
-            position: relative;
-            width: 50%;
-            height: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
-        .document {
-            position: absolute;
-            width: 80px;
-            height: 100px;
-            background: #212121;
-            color: white;
-            font-size: 12px;
-            font-weight: bold;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 2px solid #00b4d8;
-            border-radius: 8px;
-            animation: moveDocuments 4s ease-in-out;
-        }
-        .document:nth-child(1) {
-            top: 50px;
-            left: -150px;
-            animation-delay: 0s;
-        }
-        .document:nth-child(2) {
-            top: 150px;
-            left: -200px;
-            animation-delay: 0.5s;
-        }
-        .document:nth-child(3) {
-            top: 250px;
-            left: -250px;
-            animation-delay: 1s;
-        }
-        .document:nth-child(4) {
-            top: 100px;
-            left: -300px;
-            animation-delay: 0.7s;
-        }
-
-        @keyframes moveDocuments {
-            0% {
-                transform: translate(0, 0);
-                opacity: 1;
-            }
-            70% {
-                transform: translate(200px, 0);
-                opacity: 1;
-            }
-            100% {
-                transform: translate(200px, 0);
-                opacity: 0;
-            }
-        }
-
-        .ai-box {
-            width: 150px;
-            height: 150px;
-            background: #000000;
-            color: white;
-            font-size: 20px;
-            font-weight: bold;
-            border: 2px solid #00b4d8;
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 180, 216, 0.9);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        .ai-box span {
-            color: #00b4d8;
-        }
-
         .footer {
             position: absolute;
             bottom: 0;
             width: 100%;
-            padding: 20px 80px;
+            padding: 20px 120px; /* Adjusted padding */
             background: transparent;
             color: #b0b0b0;
             text-align: left;
@@ -213,11 +135,7 @@
         </div>
 
         <div class="animation-container">
-            <div class="document">PDF</div>
-            <div class="document">XML</div>
-            <div class="document">CSV</div>
-            <div class="document">JSON</div>
-            <div class="ai-box">TAXEL <span>AI</span></div>
+            <!-- Placeholder for any animations or graphics -->
         </div>
     </div>
 
