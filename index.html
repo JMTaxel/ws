@@ -69,6 +69,10 @@
             padding: 70px 80px;
         }
 
+        .hero {
+            max-width: 40%; /* Limit the width of the hero section to 40% of the page */
+        }
+
         .hero h1 {
             font-size: 4rem;
             font-weight: bold;
@@ -94,10 +98,23 @@
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
+            animation: pulseEffect 2s infinite;
         }
 
         .hero a.cta:hover {
             text-decoration: none;
+        }
+
+        @keyframes pulseEffect {
+            0% {
+                box-shadow: 0 0 5px rgba(0, 180, 216, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(0, 180, 216, 0.9);
+            }
+            100% {
+                box-shadow: 0 0 5px rgba(0, 180, 216, 0.5);
+            }
         }
 
         .footer {
@@ -123,10 +140,12 @@
     </div>
 
     <!-- Main Content -->
-    <div class="main hero">
-        <h1>The New Era of <span>Finance</span></h1>
-        <p>Transform your Accounting team with the world’s first AI-powered Bookkeeping Auditor—designed to review, validate, and correct your GL bookings, ensure compliance with GAAP / IFRS, and more.</p>
-        <a href="mailto:info@taxel.ai?subject=Sign%20Me%20Up%20for%20the%20Waitlist" class="cta">Sign up for the Waitlist</a>
+    <div class="main">
+        <div class="hero">
+            <h1>The New Era of <span>Finance</span></h1>
+            <p>Transform your Accounting team with the world’s first AI-powered Bookkeeping Auditor—designed to review, validate, and correct your GL bookings, ensure compliance with GAAP / IFRS, and more.</p>
+            <a href="mailto:info@taxel.ai?subject=Sign%20Me%20Up%20for%20the%20Waitlist" class="cta">Sign up for the Waitlist</a>
+        </div>
     </div>
 
     <!-- Footer -->
