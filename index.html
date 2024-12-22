@@ -11,10 +11,13 @@
             margin: 0;
             padding: 0;
             height: 100%;
+            display: flex;
+            flex-direction: column;
             font-family: 'Avenir', sans-serif;
             color: white;
             background: linear-gradient(to bottom right, #0a1124, #000000);
         }
+
         .header {
             display: flex;
             justify-content: space-between;
@@ -22,20 +25,24 @@
             padding: 20px 80px;
             background-color: transparent;
         }
+
         .header .logo {
             font-size: 2.5rem;
             font-weight: bold;
             color: white;
         }
+
         .header .logo span {
             font-weight: bold;
             color: #00b4d8;
             margin-left: 5px;
         }
+
         .header .nav {
             display: flex;
             align-items: center;
         }
+
         .header .nav a {
             margin: 0 15px;
             text-decoration: none;
@@ -43,6 +50,7 @@
             font-size: 1rem;
             font-weight: bold;
         }
+
         .header .nav a.contact {
             background-color: #00b4d8;
             padding: 10px 20px;
@@ -50,29 +58,35 @@
             color: white;
             transition: background-color 0.3s ease;
         }
+
         .header .nav a.contact:hover {
             background-color: #0095b6;
         }
-        .hero {
+
+        .main {
+            flex: 1; /* Ensure the main content takes up available space */
             text-align: left;
             padding: 70px 80px;
-            max-width: 40%;
         }
+
         .hero h1 {
             font-size: 4rem;
             font-weight: bold;
             margin-bottom: 20px;
             font-weight: 900;
         }
+
         .hero h1 span {
             color: #00b4d8;
         }
+
         .hero p {
             font-size: 1.25rem;
             color: #b0b0b0;
             margin-bottom: 40px;
             line-height: 1.6;
         }
+
         .hero a.cta {
             background-color: #00b4d8;
             color: white;
@@ -81,15 +95,18 @@
             font-weight: bold;
             border-radius: 5px;
         }
+
         .hero a.cta:hover {
             text-decoration: none;
         }
+
         .footer {
-            padding: 40px 80px;
+            padding: 20px 80px;
             background: transparent;
             color: #b0b0b0;
             text-align: left;
         }
+
         .footer p {
             margin: 0;
         }
@@ -105,8 +122,8 @@
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <div class="hero">
+    <!-- Main Content -->
+    <div class="main hero">
         <h1>The New Era of <span>Finance</span></h1>
         <p>Transform your Accounting team with the world’s first AI-powered Bookkeeping Auditor—designed to review, validate, and correct your GL bookings, ensure compliance with GAAP / IFRS, and more.</p>
         <a href="mailto:info@taxel.ai?subject=Sign%20Me%20Up%20for%20the%20Waitlist" class="cta">Sign up for the Waitlist</a>
