@@ -30,7 +30,7 @@
         .header .logo span {
             font-weight: bold;
             color: #00b4d8;
-            margin-left: 5px;
+            margin-left: 10px;
         }
         .header .nav {
             display: flex;
@@ -105,7 +105,7 @@
             width: 50%;
             height: 400px;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             overflow: hidden;
         }
@@ -113,36 +113,46 @@
             position: absolute;
             width: 80px;
             height: 100px;
-            background: #212121;
-            color: white;
+            background: white;
+            color: black;
             font-size: 12px;
             font-weight: bold;
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 2px solid #00b4d8;
-            border-radius: 8px;
+            border: 1px solid #00b4d8;
+            border-radius: 4px;
             animation: moveDocuments 4s ease-in-out;
         }
         .document:nth-child(1) {
             top: 50px;
-            left: -150px;
+            left: -200px;
             animation-delay: 0s;
         }
         .document:nth-child(2) {
             top: 150px;
-            left: -200px;
+            left: -250px;
             animation-delay: 0.5s;
         }
         .document:nth-child(3) {
             top: 250px;
-            left: -250px;
+            left: -300px;
             animation-delay: 1s;
         }
         .document:nth-child(4) {
             top: 100px;
-            left: -300px;
+            left: -350px;
             animation-delay: 0.7s;
+        }
+        .document:nth-child(5) {
+            top: 200px;
+            left: -400px;
+            animation-delay: 0.9s;
+        }
+        .document:nth-child(6) {
+            top: 300px;
+            left: -450px;
+            animation-delay: 1.2s;
         }
 
         @keyframes moveDocuments {
@@ -151,11 +161,11 @@
                 opacity: 1;
             }
             70% {
-                transform: translate(200px, 0);
+                transform: translate(250px, 0);
                 opacity: 1;
             }
             100% {
-                transform: translate(200px, 0);
+                transform: translate(250px, 0);
                 opacity: 0;
             }
         }
@@ -216,6 +226,8 @@
             <div class="document">XML</div>
             <div class="document">CSV</div>
             <div class="document">JSON</div>
+            <div class="document">PDF</div>
+            <div class="document">TXT</div>
             <div class="ai-box">TAXEL <span>AI</span></div>
         </div>
     </div>
