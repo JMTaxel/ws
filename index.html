@@ -124,11 +124,11 @@
 
         .document {
             position: absolute;
-            width: 60px;
-            height: 80px;
+            width: 50px;
+            height: 60px;
             background: linear-gradient(to bottom, #ffffff, #f0f0f0);
             color: black;
-            font-size: 0.7rem;
+            font-size: 0.6rem;
             font-weight: bold;
             display: flex;
             justify-content: center;
@@ -178,24 +178,18 @@
 
         .arrow {
             stroke: #00b4d8;
-            stroke-width: 3;
+            stroke-width: 2;
             fill: none;
             marker-end: url(#arrowhead);
-            stroke-dasharray: 300;
-            stroke-dashoffset: 300;
-            animation: drawArrow 1.5s forwards ease-in-out;
+            animation: pulseArrow 2s infinite;
         }
 
-        .arrow:nth-child(1) { animation-delay: 0.1s; }
-        .arrow:nth-child(2) { animation-delay: 0.3s; }
-        .arrow:nth-child(3) { animation-delay: 0.5s; }
-        .arrow:nth-child(4) { animation-delay: 0.7s; }
-        .arrow:nth-child(5) { animation-delay: 0.9s; }
-        .arrow:nth-child(6) { animation-delay: 1.1s; }
-
-        @keyframes drawArrow {
-            to {
-                stroke-dashoffset: 0;
+        @keyframes pulseArrow {
+            0%, 100% {
+                stroke-width: 2;
+            }
+            50% {
+                stroke-width: 3.5;
             }
         }
 
