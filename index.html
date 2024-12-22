@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taxel AI - Accounts Payable on Auto-Pilot</title>
+    <title>The New Era of Finance - Taxel AI</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Avenir:wght@400;700&display=swap');
 
@@ -13,14 +13,13 @@
             height: 100%;
             font-family: 'Avenir', sans-serif;
             color: white;
-            background: linear-gradient(to bottom right, #0b1120, #000000);
-            overflow-x: hidden; /* Prevent horizontal scroll */
+            background: linear-gradient(to bottom right, #0a1124, #000000);
         }
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 120px; /* Adjusted padding */
+            padding: 20px 80px;
             background-color: transparent;
         }
         .header .logo {
@@ -55,14 +54,9 @@
             background-color: #0095b6;
         }
         .hero {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            padding: 70px 120px; /* Adjusted padding */
-        }
-        .hero-text {
+            text-align: left;
+            padding: 70px 80px;
             max-width: 40%;
-            padding-left: 20px;
         }
         .hero h1 {
             font-size: 4rem;
@@ -102,11 +96,83 @@
                 box-shadow: 0 0 5px rgba(0, 180, 216, 0.5);
             }
         }
-        .footer {
-            position: absolute;
-            bottom: 0;
+        .animation {
+            margin-left: 60%;
+            margin-top: -250px;
+            position: relative;
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #00b4d8, #1a1a1a);
+            animation: moveData 3s infinite alternate;
+            box-shadow: 0 0 20px rgba(0, 180, 216, 0.7);
+        }
+        @keyframes moveData {
+            0% {
+                opacity: 0.3;
+                transform: scale(1) translateY(0);
+            }
+            50% {
+                opacity: 0.6;
+                transform: scale(1.1) translateY(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1.05) translateY(0);
+            }
+        }
+        .workflow {
+            position: relative;
+            margin: 100px auto;
             width: 100%;
-            padding: 20px 120px; /* Adjusted padding */
+            max-width: 1200px;
+            height: 500px;
+        }
+        .node {
+            width: 150px;
+            height: 50px;
+            background: #00b4d8;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 180, 216, 0.8);
+            position: absolute;
+            font-weight: bold;
+        }
+        .node.pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 0 10px rgba(0, 180, 216, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(0, 180, 216, 1);
+            }
+        }
+        .line {
+            stroke: #00b4d8;
+            stroke-width: 2;
+            fill: none;
+            animation: draw 2s infinite;
+        }
+        @keyframes draw {
+            from {
+                stroke-dasharray: 0, 1000;
+            }
+            to {
+                stroke-dasharray: 1000, 0;
+            }
+        }
+        svg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .footer {
+            padding: 40px 80px;
             background: transparent;
             color: #b0b0b0;
             text-align: left;
@@ -128,15 +194,31 @@
 
     <!-- Hero Section -->
     <div class="hero">
-        <div class="hero-text">
-            <h1>Turn your Accounts Payable on <span>Auto-Pilot</span></h1>
-            <p>Excel the transition from unstructured to structured finance data and uplevel your accounting team from Doer's to Reviewers with the intelligent invoice workflow platform.</p>
-            <a href="mailto:info@taxel.ai?subject=Sign%20Me%20Up%20for%20the%20Waitlist" class="cta">Sign up for the Waitlist</a>
-        </div>
+        <h1>The New Era of <span>Finance</span></h1>
+        <p>Transform your Accounting team with the world’s first AI-powered Bookkeeping Auditor—designed to review, validate, and correct your GL bookings, ensure compliance with GAAP / IFRS, and more.</p>
+        <a href="mailto:info@taxel.ai?subject=Sign%20Me%20Up%20for%20the%20Waitlist" class="cta">Sign up for the Waitlist</a>
+    </div>
 
-        <div class="animation-container">
-            <!-- Placeholder for any animations or graphics -->
-        </div>
+    <!-- Workflow Animation Section -->
+    <div class="workflow">
+        <div class="node" style="top: 10%; left: 10%;">PDF</div>
+        <div class="node" style="top: 30%; left: 10%;">XML</div>
+        <div class="node" style="top: 50%; left: 10%;">CSV</div>
+        <div class="node pulse" style="top: 30%; left: 50%;">TAXEL AI</div>
+        <div class="node" style="top: 10%; left: 80%;">Invoice Review</div>
+        <div class="node" style="top: 30%; left: 80%;">Approval Management</div>
+        <div class="node" style="top: 50%; left: 80%;">Supplier Communication</div>
+
+        <svg>
+            <!-- Left connections -->
+            <line x1="20%" y1="15%" x2="50%" y2="35%" class="line"></line>
+            <line x1="20%" y1="35%" x2="50%" y2="35%" class="line"></line>
+            <line x1="20%" y1="55%" x2="50%" y2="35%" class="line"></line>
+            <!-- Right connections -->
+            <line x1="50%" y1="35%" x2="80%" y2="15%" class="line"></line>
+            <line x1="50%" y1="35%" x2="80%" y2="35%" class="line"></line>
+            <line x1="50%" y1="35%" x2="80%" y2="55%" class="line"></line>
+        </svg>
     </div>
 
     <!-- Footer -->
