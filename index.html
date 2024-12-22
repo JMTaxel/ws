@@ -134,6 +134,11 @@
         .document:nth-child(5) { top: 65%; left: 10%; }
         .document:nth-child(6) { top: 80%; left: 10%; }
 
+        .document-right:nth-child(1) { top: 10%; right: 10%; }
+        .document-right:nth-child(2) { top: 30%; right: 10%; }
+        .document-right:nth-child(3) { top: 50%; right: 10%; }
+        .document-right:nth-child(4) { top: 70%; right: 10%; }
+
         .ai-box {
             position: relative;
             width: 150px;
@@ -237,6 +242,12 @@
             <!-- TAXEL AI Box -->
             <div class="ai-box">Taxel <span>AI</span></div>
 
+            <!-- Outputs -->
+            <div class="document document-right">Invoice Review</div>
+            <div class="document document-right">Approval Management</div>
+            <div class="document document-right">Supplier Communication</div>
+            <div class="document document-right">Data Reporting</div>
+
             <!-- Arrows -->
             <svg>
                 <defs>
@@ -244,12 +255,18 @@
                         <polygon points="0 0, 10 3.5, 0 7" fill="#00b4d8" />
                     </marker>
                 </defs>
+                <!-- Input Arrows -->
                 <line x1="20%" y1="10%" x2="50%" y2="50%" class="arrow"></line>
                 <line x1="20%" y1="25%" x2="50%" y2="50%" class="arrow"></line>
                 <line x1="20%" y1="40%" x2="50%" y2="50%" class="arrow"></line>
                 <line x1="20%" y1="55%" x2="50%" y2="50%" class="arrow"></line>
                 <line x1="20%" y1="70%" x2="50%" y2="50%" class="arrow"></line>
                 <line x1="20%" y1="85%" x2="50%" y2="50%" class="arrow"></line>
+                <!-- Output Arrows -->
+                <line x1="50%" y1="50%" x2="80%" y2="10%" class="arrow"></line>
+                <line x1="50%" y1="50%" x2="80%" y2="30%" class="arrow"></line>
+                <line x1="50%" y1="50%" x2="80%" y2="50%" class="arrow"></line>
+                <line x1="50%" y1="50%" x2="80%" y2="70%" class="arrow"></line>
             </svg>
         </div>
     </div>
