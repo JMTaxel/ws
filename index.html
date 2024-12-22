@@ -11,7 +11,7 @@
             margin: 0;
             font-family: 'Avenir', sans-serif;
             color: white;
-            background: linear-gradient(180deg, #000000, #121212); /* Black to dark blue gradient background */
+            background: linear-gradient(to bottom right, #0d1b2a, #000000); /* Dark blue to black gradient */
         }
         .header {
             display: flex;
@@ -21,7 +21,7 @@
             background-color: transparent;
         }
         .header .logo {
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: bold;
             color: white;
         }
@@ -52,19 +52,25 @@
             background-color: #0095b6;
         }
         .hero {
-            text-align: left;
+            text-align: center;
             padding: 100px 40px;
         }
         .hero h1 {
             font-size: 4rem;
             font-weight: bold;
             margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .hero p {
             font-size: 1.25rem;
             color: #b0b0b0;
             margin-bottom: 40px;
             line-height: 1.6;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .hero a.cta {
             background-color: #00b4d8;
@@ -77,6 +83,50 @@
         }
         .hero a.cta:hover {
             background-color: #0095b6;
+        }
+        .section {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .banner {
+            padding: 40px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .banner h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .banner p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+        }
+        .banner a {
+            background-color: #00b4d8;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .banner a:hover {
+            background-color: #0095b6;
+        }
+        .footer {
+            padding: 40px;
+            background-color: #000000;
+            color: #b0b0b0;
+            text-align: center;
+        }
+        .footer a {
+            color: #00b4d8;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -95,6 +145,21 @@
         <h1>The New Era of Finance</h1>
         <p>Transform your Accounting team with the world’s first AI-powered Bookkeeping Auditor—designed to review, validate, and correct your GL bookings, ensure compliance with GAAP / IFRS, and more.</p>
         <a href="#" class="cta">Sign up for the Waitlist</a>
+    </div>
+
+    <!-- Banner Section -->
+    <div class="section">
+        <div class="banner">
+            <h2>Join Our Beta Today</h2>
+            <p>Be among the pioneering companies to embrace full financial automation and lead the future of finance!</p>
+            <a href="/form-1-login-template">Sign up for the waitlist</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2024 Taxel AI • All rights reserved.</p>
+        <p>Made in <a href="#">Berlin</a> with <a href="#">❤</a></p>
     </div>
 </body>
 </html>
