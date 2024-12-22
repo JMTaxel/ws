@@ -11,13 +11,13 @@
             margin: 0;
             font-family: 'Avenir', sans-serif;
             color: white;
-            background: linear-gradient(to bottom right, #1e3a8a, #000000); /* Brighter dark blue to black gradient */
+            background: linear-gradient(to bottom right, #192a56, #000000); /* Darker blue to black gradient */
         }
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 40px;
+            padding: 20px 80px; /* Aligns with hero text */
             background-color: transparent;
         }
         .header .logo {
@@ -54,19 +54,18 @@
         .hero {
             text-align: left;
             padding: 100px 80px;
+            max-width: 40%; /* Limit text width to 40% */
         }
         .hero h1 {
             font-size: 4rem;
             font-weight: bold;
             margin-bottom: 20px;
-            max-width: 800px;
         }
         .hero p {
             font-size: 1.25rem;
             color: #b0b0b0;
             margin-bottom: 40px;
             line-height: 1.6;
-            max-width: 800px;
         }
         .hero a.cta {
             background-color: #00b4d8;
@@ -80,35 +79,30 @@
         .hero a.cta:hover {
             background-color: #0095b6;
         }
-        .section {
-            text-align: left;
-            padding: 60px 80px;
-        }
-        .banner {
-            padding: 40px;
-            background-color: #1a1a1a;
+        .animation {
+            margin-left: 60%;
+            margin-top: -250px;
+            position: relative;
+            width: 400px;
+            height: 250px;
             border-radius: 10px;
-            max-width: 800px;
+            background: linear-gradient(135deg, #00b4d8, #1a1a1a);
+            animation: moveData 3s infinite alternate;
+            box-shadow: 0 0 20px rgba(0, 180, 216, 0.7);
         }
-        .banner h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        .banner p {
-            font-size: 1.25rem;
-            margin-bottom: 30px;
-        }
-        .banner a {
-            background-color: #00b4d8;
-            padding: 10px 20px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .banner a:hover {
-            background-color: #0095b6;
+        @keyframes moveData {
+            0% {
+                opacity: 0.3;
+                transform: scale(1) translateY(0);
+            }
+            50% {
+                opacity: 0.6;
+                transform: scale(1.1) translateY(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1.05) translateY(0);
+            }
         }
         .footer {
             padding: 40px;
@@ -122,27 +116,6 @@
         }
         .footer a:hover {
             text-decoration: underline;
-        }
-        .animation {
-            margin-left: 820px;
-            margin-top: -250px;
-            position: relative;
-            width: 400px;
-            height: 250px;
-            border-radius: 10px;
-            background: linear-gradient(135deg, #00b4d8, #1a1a1a);
-            animation: fadeInData 3s infinite alternate;
-            box-shadow: 0 0 20px rgba(0, 180, 216, 0.7);
-        }
-        @keyframes fadeInData {
-            0% {
-                opacity: 0.3;
-                transform: scale(1);
-            }
-            100% {
-                opacity: 1;
-                transform: scale(1.05);
-            }
         }
     </style>
 </head>
@@ -163,15 +136,6 @@
         <a href="#" class="cta">Sign up for the Waitlist</a>
     </div>
     <div class="animation"></div>
-
-    <!-- Banner Section -->
-    <div class="section">
-        <div class="banner">
-            <h2>Join Our Beta Today</h2>
-            <p>Be among the pioneering companies to embrace full financial automation and lead the future of finance!</p>
-            <a href="/form-1-login-template">Sign up for the waitlist</a>
-        </div>
-    </div>
 
     <!-- Footer -->
     <div class="footer">
