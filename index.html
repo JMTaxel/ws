@@ -127,7 +127,7 @@
         }
 
         .document:nth-child(1) {
-            top: 12%;
+            top: 10%;
             left: 20%;
             border: 2px solid red;
         }
@@ -139,25 +139,25 @@
         }
 
         .document:nth-child(3) {
-            top: 38%;
+            top: 40%;
             left: 20%;
             border: 2px solid green;
         }
 
         .document:nth-child(4) {
-            top: 51%;
+            top: 55%;
             left: 20%;
             border: 2px solid black;
         }
 
         .document:nth-child(5) {
-            top: 64%;
+            top: 70%;
             left: 20%;
             border: 2px solid darkblue;
         }
 
         .document:nth-child(6) {
-            top: 77%;
+            top: 85%;
             left: 20%;
             border: 2px solid #00b4d8;
         }
@@ -181,22 +181,22 @@
         }
 
         .workflow:nth-child(1) {
-            top: 12%;
+            top: 10%;
             right: 10%;
         }
 
         .workflow:nth-child(2) {
-            top: 35%;
+            top: 30%;
             right: 10%;
         }
 
         .workflow:nth-child(3) {
-            top: 58%;
+            top: 50%;
             right: 10%;
         }
 
         .workflow:nth-child(4) {
-            top: 77%;
+            top: 70%;
             right: 10%;
         }
 
@@ -235,8 +235,8 @@
             stroke-width: 1.5;
             fill: none;
             marker-end: url(#arrowhead);
-            stroke-dasharray: 100;
-            stroke-dashoffset: 100;
+            stroke-dasharray: 100; /* Total length of arrow */
+            stroke-dashoffset: 100; /* Start hidden */
             animation: drawArrow 6s infinite ease-in-out;
         }
 
@@ -250,6 +250,30 @@
             100% {
                 stroke-dashoffset: 100;
             }
+        }
+
+        .arrow:nth-child(1) {
+            animation-delay: 0.5s;
+        }
+
+        .arrow:nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        .arrow:nth-child(3) {
+            animation-delay: 1.5s;
+        }
+
+        .arrow:nth-child(4) {
+            animation-delay: 2s;
+        }
+
+        .arrow:nth-child(5) {
+            animation-delay: 2.5s;
+        }
+
+        .arrow:nth-child(6) {
+            animation-delay: 3s;
         }
 
         .footer {
@@ -297,10 +321,10 @@
             <div class="ai-box">Taxel <span>AI</span></div>
 
             <!-- Outputs -->
-            <div class="workflow" style="top: 12%; right: 10%;">Approval<br>Management</div>
-            <div class="workflow" style="top: 35%; right: 10%;">Supplier<br>Communication</div>
-            <div class="workflow" style="top: 58%; right: 10%;">Account<br>Assignment</div>
-            <div class="workflow" style="top: 77%; right: 10%;">Tax<br>Finding</div>
+            <div class="workflow" style="top: 10%; right: 10%;">Approval<br>Management</div>
+            <div class="workflow" style="top: 30%; right: 10%;">Supplier<br>Communication</div>
+            <div class="workflow" style="top: 50%; right: 10%;">Account<br>Assignment</div>
+            <div class="workflow" style="top: 70%; right: 10%;">Tax<br>Finding</div>
 
             <!-- Arrows -->
             <svg>
@@ -310,17 +334,17 @@
                     </marker>
                 </defs>
                 <!-- Input Arrows -->
-                <line x1="20%" y1="15%" x2="50%" y2="50%" class="arrow"></line>
-                <line x1="20%" y1="28%" x2="50%" y2="50%" class="arrow"></line>
-                <line x1="20%" y1="41%" x2="50%" y2="50%" class="arrow"></line>
-                <line x1="20%" y1="54%" x2="50%" y2="50%" class="arrow"></line>
-                <line x1="20%" y1="67%" x2="50%" y2="50%" class="arrow"></line>
-                <line x1="20%" y1="80%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="22%" y1="12%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="22%" y1="27%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="22%" y1="42%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="22%" y1="57%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="22%" y1="72%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="22%" y1="87%" x2="50%" y2="50%" class="arrow"></line>
                 <!-- Output Arrows -->
-                <line x1="50%" y1="50%" x2="90%" y2="15%" class="arrow"></line>
-                <line x1="50%" y1="50%" x2="90%" y2="38%" class="arrow"></line>
-                <line x1="50%" y1="50%" x2="90%" y2="61%" class="arrow"></line>
-                <line x1="50%" y1="50%" x2="90%" y2="80%" class="arrow"></line>
+                <line x1="50%" y1="50%" x2="88%" y2="10%" class="arrow"></line>
+                <line x1="50%" y1="50%" x2="88%" y2="30%" class="arrow"></line>
+                <line x1="50%" y1="50%" x2="88%" y2="50%" class="arrow"></line>
+                <line x1="50%" y1="50%" x2="88%" y2="70%" class="arrow"></line>
             </svg>
         </div>
     </div>
