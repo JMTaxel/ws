@@ -127,40 +127,25 @@
             animation: fadeIn 1s ease-in-out both, documentBounce 2s infinite ease-in-out;
         }
 
+        /* Add colored borders for the documents */
+        .document:nth-child(1) { border: 2px solid red; }
+        .document:nth-child(2) { border: 2px solid orange; }
+        .document:nth-child(3) { border: 2px solid green; }
+        .document:nth-child(4) { border: 2px solid black; }
+        .document:nth-child(5) { border: 2px solid darkblue; }
+        .document:nth-child(6) { border: 2px solid #00b4d8; }
+
         .document:hover {
             transform: scale(1.1);
             transition: transform 0.2s ease-in-out;
         }
 
-        .document:nth-child(1) {
-            top: 10%;
-            left: 20%;
-        }
-
-        .document:nth-child(2) {
-            top: 25%;
-            left: 20%;
-        }
-
-        .document:nth-child(3) {
-            top: 40%;
-            left: 20%;
-        }
-
-        .document:nth-child(4) {
-            top: 55%;
-            left: 20%;
-        }
-
-        .document:nth-child(5) {
-            top: 70%;
-            left: 20%;
-        }
-
-        .document:nth-child(6) {
-            top: 85%;
-            left: 20%;
-        }
+        .document:nth-child(1) { top: 10%; left: 20%; }
+        .document:nth-child(2) { top: 25%; left: 20%; }
+        .document:nth-child(3) { top: 40%; left: 20%; }
+        .document:nth-child(4) { top: 55%; left: 20%; }
+        .document:nth-child(5) { top: 70%; left: 20%; }
+        .document:nth-child(6) { top: 85%; left: 20%; }
 
         @keyframes fadeIn {
             from {
@@ -199,6 +184,37 @@
             box-shadow: 0 0 20px rgba(0, 180, 216, 0.7);
             z-index: 3;
             animation: rotateScale 10s infinite ease-in-out;
+        }
+
+        .workflow {
+            position: absolute;
+            width: 150px;
+            height: 60px;
+            background: linear-gradient(to bottom, #e0f7fa, #00bcd4);
+            color: #01579b;
+            font-size: 0.75rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 2;
+            text-align: center;
+            line-height: 1.2;
+            animation: fadeIn 1.5s ease-in-out both;
+        }
+
+        .workflow:nth-child(7) { top: 15%; right: 10%; }
+        .workflow:nth-child(8) { top: 35%; right: 10%; }
+        .workflow:nth-child(9) { top: 55%; right: 10%; }
+        .workflow:nth-child(10) { top: 75%; right: 10%; }
+
+        .workflow:hover {
+            transform: scale(1.1);
+            background: linear-gradient(to bottom, #00b4d8, #e0f7fa);
+            color: white;
+            transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
         }
 
         @keyframes rotateScale {
@@ -273,6 +289,11 @@
 
             <div class="ai-box">Taxel <span>AI</span></div>
 
+            <div class="workflow"><b>Approval<br>Management</b></div>
+            <div class="workflow"><b>Supplier<br>Communication</b></div>
+            <div class="workflow"><b>Account<br>Assignment</b></div>
+            <div class="workflow"><b>Tax<br>Finding</b></div>
+
             <svg>
                 <defs>
                     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
@@ -285,6 +306,10 @@
                 <line x1="20%" y1="63%" x2="50%" y2="50%" class="arrow"></line>
                 <line x1="20%" y1="80%" x2="50%" y2="50%" class="arrow"></line>
                 <line x1="20%" y1="92%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="50%" y1="50%" x2="90%" y2="18%" class="arrow"></line>
+                <line x1="50%" y1="50%" x2="90%" y2="35%" class="arrow"></line>
+                <line x1="50%" y1="50%" x2="90%" y2="65%" class="arrow"></line>
+                <line x1="50%" y1="50%" x2="90%" y2="85%" class="arrow"></line>
             </svg>
         </div>
     </div>
