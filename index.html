@@ -200,10 +200,6 @@
             right: 10%;
         }
 
-        .workflow img {
-            margin-right: 5px;
-        }
-
         .ai-box {
             position: relative;
             width: 150px;
@@ -239,8 +235,8 @@
             stroke-width: 1.5;
             fill: none;
             marker-end: url(#arrowhead);
-            stroke-dasharray: 100; /* Total length of arrow */
-            stroke-dashoffset: 100; /* Start hidden */
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
             animation: drawArrow 6s infinite ease-in-out;
         }
 
@@ -256,44 +252,15 @@
             }
         }
 
-        .arrow:nth-child(1) {
-            animation-delay: 0.5s;
-        }
-
-        .arrow:nth-child(2) {
-            animation-delay: 1s;
-        }
-
-        .arrow:nth-child(3) {
-            animation-delay: 1.5s;
-        }
-
-        .arrow:nth-child(4) {
-            animation-delay: 2s;
-        }
-
-        .arrow:nth-child(5) {
-            animation-delay: 2.5s;
-        }
-
-        .arrow:nth-child(6) {
-            animation-delay: 3s;
-        }
-
         .footer {
             padding: 40px 80px;
             background: transparent;
             color: #b0b0b0;
             text-align: left;
         }
-
-        .footer p {
-            margin: 0;
-        }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <div class="header">
         <div class="logo">Taxel <span>AI</span></div>
         <div class="nav">
@@ -302,18 +269,14 @@
         </div>
     </div>
 
-    <!-- Main Content -->
     <div class="main">
-        <!-- Hero Section -->
         <div class="hero">
             <h1>The New Era of <span>Finance</span></h1>
             <p>Transform your Accounting team with the world’s first AI-powered Bookkeeping Auditor—designed to review, validate, and correct your GL bookings, ensure compliance with GAAP / IFRS, and more.</p>
             <a href="mailto:info@taxel.ai?subject=Sign%20Me%20Up%20for%20the%20Waitlist" class="cta">Sign up for the Waitlist</a>
         </div>
 
-        <!-- Animation Section -->
         <div class="animation-container">
-            <!-- Inputs -->
             <div class="document">PDF</div>
             <div class="document">XML</div>
             <div class="document">CSV</div>
@@ -321,38 +284,25 @@
             <div class="document">JSON</div>
             <div class="document">XLS</div>
 
-            <!-- TAXEL AI Box -->
             <div class="ai-box">Taxel <span>AI</span></div>
 
-            <!-- Outputs -->
-            <div class="workflow" style="top: 15%; right: 10%;">
-                <img src="approval-icon.png" alt="Approval" width="20"> Approval<br>Management
-            </div>
-            <div class="workflow" style="top: 35%; right: 10%;">
-                <img src="supplier-icon.png" alt="Supplier" width="20"> Supplier<br>Communication
-            </div>
-            <div class="workflow" style="top: 55%; right: 10%;">
-                <img src="account-icon.png" alt="Account" width="20"> Account<br>Assignment
-            </div>
-            <div class="workflow" style="top: 75%; right: 10%;">
-                <img src="tax-icon.png" alt="Tax" width="20"> Tax<br>Finding
-            </div>
+            <div class="workflow" style="top: 15%; right: 10%;">Approval<br>Management</div>
+            <div class="workflow" style="top: 35%; right: 10%;">Supplier<br>Communication</div>
+            <div class="workflow" style="top: 55%; right: 10%;">Account<br>Assignment</div>
+            <div class="workflow" style="top: 75%; right: 10%;">Tax<br>Finding</div>
 
-            <!-- Arrows -->
             <svg>
                 <defs>
                     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
                         <polygon points="0 0, 10 3.5, 0 7" fill="#00b4d8" />
                     </marker>
                 </defs>
-                <!-- Input Arrows -->
                 <line x1="20%" y1="12%" x2="50%" y2="50%" class="arrow"></line>
                 <line x1="20%" y1="27%" x2="50%" y2="50%" class="arrow"></line>
                 <line x1="20%" y1="42%" x2="50%" y2="50%" class="arrow"></line>
                 <line x1="20%" y1="57%" x2="50%" y2="50%" class="arrow"></line>
                 <line x1="20%" y1="72%" x2="50%" y2="50%" class="arrow"></line>
                 <line x1="20%" y1="87%" x2="50%" y2="50%" class="arrow"></line>
-                <!-- Output Arrows -->
                 <line x1="50%" y1="50%" x2="90%" y2="15%" class="arrow"></line>
                 <line x1="50%" y1="50%" x2="90%" y2="35%" class="arrow"></line>
                 <line x1="50%" y1="50%" x2="90%" y2="55%" class="arrow"></line>
@@ -361,7 +311,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <div class="footer">
         <p>© 2024 Taxel AI • All rights reserved.</p>
     </div>
