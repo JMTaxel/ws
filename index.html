@@ -128,24 +128,17 @@
         }
 
         /* Add colored borders for the documents */
-        .document:nth-child(1) { border: 2px solid red; }
-        .document:nth-child(2) { border: 2px solid orange; }
-        .document:nth-child(3) { border: 2px solid green; }
-        .document:nth-child(4) { border: 2px solid black; }
-        .document:nth-child(5) { border: 2px solid darkblue; }
-        .document:nth-child(6) { border: 2px solid #00b4d8; }
+        .document:nth-child(1) { border: 2px solid red; top: 10%; left: 20%; }
+        .document:nth-child(2) { border: 2px solid orange; top: 25%; left: 20%; }
+        .document:nth-child(3) { border: 2px solid green; top: 40%; left: 20%; }
+        .document:nth-child(4) { border: 2px solid black; top: 55%; left: 20%; }
+        .document:nth-child(5) { border: 2px solid darkblue; top: 70%; left: 20%; }
+        .document:nth-child(6) { border: 2px solid #00b4d8; top: 85%; left: 20%; }
 
         .document:hover {
             transform: scale(1.1);
             transition: transform 0.2s ease-in-out;
         }
-
-        .document:nth-child(1) { top: 10%; left: 20%; }
-        .document:nth-child(2) { top: 25%; left: 20%; }
-        .document:nth-child(3) { top: 40%; left: 20%; }
-        .document:nth-child(4) { top: 55%; left: 20%; }
-        .document:nth-child(5) { top: 70%; left: 20%; }
-        .document:nth-child(6) { top: 85%; left: 20%; }
 
         @keyframes fadeIn {
             from {
@@ -192,7 +185,7 @@
             height: 60px;
             background: linear-gradient(to bottom, #e0f7fa, #00bcd4);
             color: #01579b;
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             font-weight: bold;
             display: flex;
             justify-content: center;
@@ -205,11 +198,10 @@
             animation: fadeIn 1.5s ease-in-out both;
         }
 
-        .workflow:nth-child(7) { top: 15%; right: 10%; }
-        .workflow:nth-child(8) { top: 35%; right: 10%; }
-        .workflow:nth-child(9) { top: 55%; right: 10%; }
-        .workflow:nth-child(10) { top: 75%; right: 10%; }
-        .workflow:nth-child(11) { top: 85%; right: 10%; }
+        .workflow:nth-child(7) { top: 20%; right: 10%; }
+        .workflow:nth-child(8) { top: 40%; right: 10%; }
+        .workflow:nth-child(9) { top: 60%; right: 10%; }
+        .workflow:nth-child(10) { top: 80%; right: 10%; }
 
         .workflow:hover {
             transform: scale(1.1);
@@ -301,17 +293,14 @@
                         <polygon points="0 0, 10 3.5, 0 7" fill="#00b4d8" />
                     </marker>
                 </defs>
-                <line x1="20%" y1="12%" x2="50%" y2="50%" class="arrow"></line>
-                <line x1="20%" y1="27%" x2="50%" y2="50%" class="arrow"></line>
-                <line x1="20%" y1="45%" x2="50%" y2="50%" class="arrow"></line>
-                <line x1="20%" y1="63%" x2="50%" y2="50%" class="arrow"></line>
-                <line x1="20%" y1="80%" x2="50%" y2="50%" class="arrow"></line>
-                <line x1="20%" y1="92%" x2="50%" y2="50%" class="arrow"></line>
-                <line x1="50%" y1="50%" x2="90%" y2="15%" class="arrow"></line>
-                <line x1="50%" y1="50%" x2="90%" y2="35%" class="arrow"></line>
-                <line x1="50%" y1="50%" x2="90%" y2="55%" class="arrow"></line>
-                <line x1="50%" y1="50%" x2="90%" y2="75%" class="arrow"></line>
-                <line x1="50%" y1="50%" x2="90%" y2="85%" class="arrow"></line>
+                <line x1="20%" y1="15%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="20%" y1="30%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="20%" y1="50%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="20%" y1="70%" x2="50%" y2="50%" class="arrow"></line>
+                <line x1="50%" y1="50%" x2="90%" y2="20%" class="arrow"></line>
+                <line x1="50%" y1="50%" x2="90%" y2="40%" class="arrow"></line>
+                <line x1="50%" y1="50%" x2="90%" y2="60%" class="arrow"></line>
+                <line x1="50%" y1="50%" x2="90%" y2="80%" class="arrow"></line>
             </svg>
         </div>
     </div>
